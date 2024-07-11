@@ -2,23 +2,20 @@
 This project represents my first experience programming a website in 2021, when I was 17 years old. I started by creating a user interface for the homepage of a clothing store website. It marked a significant milestone in my progress as a developer.
 
 Table of Contents
-> Introduction
-> Features
-> Technologies Used
-> Installation
-> Usage
-> Contributing
+- Introduction
+- Features
+- Technologies Used
+- Installation
+- Usage
+- Contributing
 
 Introduction
 This project is a simple user interface for a clothing store website. It includes the homepage design, showcasing various elements that would be typical for such a site. This project was developed to practice and demonstrate my skills in web design and development.
 
 Features
-- Clean and modern UI design
-- Responsive layout for various screen sizes
-- Interactive elements such as buttons and links
-- Technologies Used
-- HTML5
-- CSS3
+- 2015 Old Modern UI Style Website
+- HTML
+- CSS
 - JavaScript
 
 Usage
