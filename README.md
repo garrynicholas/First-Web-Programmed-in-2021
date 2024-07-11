@@ -5,7 +5,6 @@ Table of Contents
 - Introduction
 - Features
 - Technologies Used
-- Installation
 - Usage
 - Contributing
 
@@ -14,6 +13,11 @@ This project is a simple user interface for a clothing store website. It include
 
 Features
 - 2015 Old Modern UI Style Website
+- HTML
+- CSS
+- JavaScript
+
+Technologies Used
 - HTML
 - CSS
 - JavaScript
