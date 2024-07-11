@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+        @font-face {
+            font-family: Koulen;
+            src: url(font/Koulen-Regular.ttf);
+        }
+        @font-face {
+            font-family: Dosis;
+            src: url(font/Dosis-Bold.ttf);
+        }
+        /* Header */
+        .header {
+            min-height: 50px;
+            text-align: center;
+            }
+            .logo img {
+            width: 130px;
+            margin-top: -13px;
+            margin-left: -10px;
+            }
+            .menu ul {
+            padding: 0;
+            }
+            .menu ul li {
+            display: inline-block;
+            position: relative;
+            font-family: 'Koulen';
+            }
+            .menu ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            }
+            .thumbnail {
+            background-color: white;
+            text-align: left;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+            }
+            .thumbnail img {
+            width: 100%;
+            }
+            /* Content */
+            .content {
+            background-color: #ddd;
+            min-height: 500px;
+            overflow: auto;
+            
+            }
+            .footer {
+            background-color: #ccc;
+            min-height: 50px;
+            padding: 20px;
+            text-align: center;
+            }
+            ul.submenu {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+            }
+            ul.submenu li {
+            display: block;
+            }
+            ul.submenu li a {
+            display: block;
+            padding: 5px 10px;
+            }
+            ul.submenu {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+
+            top: 20px;
+            left: 0;
+            }
+            .menu ul li:hover ul.submenu {
+            display: block;
+            }
+            .jumbotron {
+            font-family: 'Koulen';
+            width: 100%;
+            padding: 120px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-image: url(img/Gaming-Unsplash.jpg);
+            background-size: cover;
+            position: relative;
+            }
+            /* Note: Membuat jumbotron menjadi gelap (Overlay) */
+            .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
+            }
+            /* Note: Position relatife membuat teks yang telah di overlay gelap tadi menjadi terang kembali */
+            .jumbotron h2,
+            .jumbotron p {
+            position: relative;
+            }
+            .a {
+                font-family: 'Dosis';
+                margin-top: 1px;
+            }
+            .b {
+                font-family: 'Koulen';
+                margin-left: 15px;
+            }
+            /* Footer */
+            .input {
+                padding: 12px;
+                padding-right: 200px;
+            }
+            .submit {
+                background-color: blueviolet;
+                color: white;
+                padding: 12px;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin-left: 10px;
+            }
+            .sub {
+                margin-top: -2px;
+            }
+            .harga {
+                margin-top: -20px;
+                font-family: 'Dosis';
+            }
+            .lokasi {
+                margin-left: -20px;
+            }
+            div.nav {
+	            text-align: left;
+	        }
+            .link { 
+	            display: inline-block; 
+	            text-align: left; 
+                list-style-type: none; 
+                /* Untuk menghapus bullet list */
+	        }
+            .spacing {
+                padding: 5px;
+            }
+            .deskripsi {
+                color: grey;
+            }
+            .footerlogo {
+                text-align: left;
+                margin-top: -70px;
+            }
+            .desclogo {
+                margin-top: -15px;
+                text-align: left;
+            }
+            .footeredit {
+                width: 1200px;
+            }
+    </style>
+</head>
+<body>
+        <div class="header">
+            <div class="logo">
+            <img align="left" src="img/logo.jpg" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Notifikasi</a>
+                    <ul class="submenu">
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Pembayaran</a></li>
+                    <li><a href="#">Jual Produk</a></li>
+                    </ul>
+            </div>
+            </div>
+            
+            <div class="jumbotron">
+                <div class="overlay"></div>
+                <h2>Welcome to My Homepage</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolor necessitatibus quae voluptate explicabo architecto fugiat
+                asperiores illo quibusdam qui mollitia, porro fugit. Illum sapiente
+                modi, ut harum aliquam accusamus unde.</p>
+                </div>
+<!-- Konten Trending -->
+<table>
+    <tr>
+        <td>
+            <div class="content">
+                <h2 class="b">Trending</h2>
+                
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                <ul class="lokasi">
+                    <li>Jakarta Pusat</li>
+                </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                        dignissimos quos alias iure.</p>
+                <ul class="lokasi">
+                    <li>Jakarta Pusat</li>
+                </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                    <ul class="lokasi">
+                        <li>Jakarta Pusat</li>
+                    </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        
+            
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                    <ul class="lokasi">
+                        <li>Jakarta Pusat</li>
+                    </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+                
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                    <ul class="lokasi">
+                        <li>Jakarta Pusat</li>
+                    </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <div class="content">
+                <h2 class="b">Trending</h2>
+                
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                <ul class="lokasi">
+                    <li>Jakarta Pusat</li>
+                </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                        dignissimos quos alias iure.</p>
+                <ul class="lokasi">
+                    <li>Jakarta Pusat</li>
+                </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                    <ul class="lokasi">
+                        <li>Jakarta Pusat</li>
+                    </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        
+            
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                    <ul class="lokasi">
+                        <li>Jakarta Pusat</li>
+                    </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+                
+                <div class="thumbnail">
+                <img src="http://via.placeholder.com/250x150">
+                <h2 class="a">Product 2</h2>
+                <p class="harga">Rp 250.000</p>
+                <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                    dignissimos quos alias iure.</p>
+                    <ul class="lokasi">
+                        <li>Jakarta Pusat</li>
+                    </ul> 
+                <input class="detail" type="submit" value="Detail">
+                </div>
+        </td>
+    </tr>
+</table>
+    <div class="content">
+        <h2 class="b">Trending</h2>
+        
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+        <ul class="lokasi">
+            <li>Jakarta Pusat</li>
+        </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                dignissimos quos alias iure.</p>
+        <ul class="lokasi">
+            <li>Jakarta Pusat</li>
+        </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+    
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+        
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+<!-- Konten iklan -->
+        <h2 class="b">Iklan</h2>
+        
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+        <ul class="lokasi">
+            <li>Jakarta Pusat</li>
+        </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                dignissimos quos alias iure.</p>
+        <ul class="lokasi">
+            <li>Jakarta Pusat</li>
+        </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+        
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+<!-- Konten diskon -->
+        <h2 class="b">Diskon</h2>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+        <ul class="lokasi">
+            <li>Jakarta Pusat</li>
+        </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+                dignissimos quos alias iure.</p>
+        <ul class="lokasi">
+            <li>Jakarta Pusat</li>
+        </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+
+    
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+        
+        <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2 class="a">Product 2</h2>
+        <p class="harga">Rp 250.000</p>
+        <p class="deskripsi" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi aliquid mollitia ad a explicabo, beatae voluptatibus 
+            dignissimos quos alias iure.</p>
+            <ul class="lokasi">
+                <li>Jakarta Pusat</li>
+            </ul> 
+        <input class="detail" type="submit" value="Detail">
+        </div>
+          
+        </div>
+
+        <div class="footer">
+            <table align="center">
+                <h1 class="sub">Subscribe</h1>
+                    <form action="">
+                    <tr>
+                        <td><input class="input"  placeholder="Subscribe" type="text">
+                            <input class="submit" type="submit" value="Buat Account">
+                        </td>
+                    </tr>
+                </form>
+                </tr>
+            </table>
+            <table class="footeredit">
+                <tr>
+                <td><h1 class="footerlogo">LOGO</h1>
+                    <p class="desclogo">LOREM IPSUM DOLOR </p>
+                </td>
+                <td>
+                    <div class="nav">
+                    <ul class="link">
+                        <li class="spacing"><a href="">HOME</a></li>
+                        <li class="spacing"><a href="">ABOUT</a></li>
+                        <li class="spacing"><a href="">NOTIFIKASI</a></li>
+                        <li class="spacing"><a href="">PEMBAYARAN</a></li>
+                        <li class="spacing"><a href="">JUAL PRODUK</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </td>
+                <td>
+                    <div class="nav">
+                    <ul class="link">
+                        <li class="spacing"><a href="">HOME</a></li>
+                        <li class="spacing"><a href="">ABOUT</a></li>
+                        <li class="spacing"><a href="">NOTIFIKASI</a></li>
+                        <li class="spacing"><a href="">PEMBAYARAN</a></li>
+                        <li class="spacing"><a href="">JUAL PRODUK</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </td>
+                <td>
+                    <div class="nav">
+                    <ul class="link">
+                        <li class="spacing"><a href="">HOME</a></li>
+                        <li class="spacing"><a href="">ABOUT</a></li>
+                        <li class="spacing"><a href="">NOTIFIKASI</a></li>
+                        <li class="spacing"><a href="">PEMBAYARAN</a></li>
+                        <li class="spacing"><a href="">JUAL PRODUK</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWN</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        }
+        div {
+        background: #333131;
+        height: 70px;
+        width: 100%;
+        }
+
+        div ul {
+        float: right;
+        margin-right: 20px;
+        }
+
+        div ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        margin-top: -5px;
+        }
+
+        div ul li a {
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 7px 13px;
+        border-radius: 7px;
+        }
+        .logo {
+        font-size: 50px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: white;
+        }
+        .jumbotron {
+            font-family: Tiffany;
+            width: 100%;
+            padding: 160px 40px;
+            box-sizing: border-box;
+            text-align: left;
+            color: white;
+            background-color: #aaa;
+            background-image: url(img/Gaming-Unsplash.jpg);
+            background-size: cover;
+            position: relative;
+            }
+            /* Note: Membuat jumbotron menjadi gelap (Overlay) */
+            .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
+            }
+            /* Note: Position relatife membuat teks yang telah di overlay gelap tadi menjadi terang kembali */
+            .jumbotron h2,
+            .jumbotron p {
+            position: relative;
+            }
+/* Style Content */
+.thumbnail {
+background-color: white;
+text-align: center;
+padding: 10px;
+width: 225px;
+margin: 10px;
+}
+.thumbnail {
+background-color: white;
+text-align: center;
+padding: 10px;
+width: 225px;
+margin: 10px;
+float: left;
+}
+.thumbnail img {
+width: 100%;
+}
+
+.content {
+background-color: #ddd;
+min-height: 500px;
+overflow: auto;
+}
+.footer {
+background-color: #ccc;
+min-height: 50px;
+padding: 20px;
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <a class="logo" href="#home">DIESTRO</a>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">NOTIFIKASI</a>
+            <ul class="submenu">
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Portfolio</a></li>
+            </ul>
+            </li>
+            <li><a href="#">MORE</a></li>
+            <input class="button" type="submit" value="LOGIN">
+            <input class="button" type="submit" value="REGISTER">
+            </ul>
+        </div>
+        <div class="jumbotron">
+            <div class="overlay"></div>
+            <h2>WELCOME TO MY HOMEPAGE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolor necessitatibus quae voluptate explicabo architecto fugiat
+            asperiores illo quibusdam qui mollitia, porro fugit. Illum sapiente
+            modi, ut harum aliquam accusamus unde. Lorem ipsum dolor sit, amet 
+            consectetur adipisicing elit. Magnam distinctio quas illo amet! Quam 
+            nulla non necessitatibus quaerat, ipsum sed sequi quasi esse eum corporis! 
+            Sunt voluptate earum fugit quasi!</p>
+            </div>
+<!-- Konten Trending -->
+<div class="content">
+    <h2>My Articles</h2>
+    
+    <div class="thumbnail">
+    <img src="http://via.placeholder.com/250x150">
+    <h2>Product 2</h2>
+    <p>Rp 250.000</p>
+    </div>
+    
+    <div class="thumbnail">
+    <img src="http://via.placeholder.com/250x150">
+    <h2>Product 2</h2>
+    <p>Rp 250.000</p>
+    </div>
+    
+    <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2>Product 2</h2>
+        <p>Rp 250.000</p>
+        </div>
+    </div>
+
+    <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2>Product 2</h2>
+        <p>Rp 250.000</p>
+        </div>
+    </div>
+
+    <div class="thumbnail">
+        <img src="http://via.placeholder.com/250x150">
+        <h2>Product 2</h2>
+        <p>Rp 250.000</p>
+        </div>
+    </div>
+</body>
+</html>
